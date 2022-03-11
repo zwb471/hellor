@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["my_music_history"],{4664:function(s,t,a){"use strict";a.r(t);var n=a("7a23"),e={class:"MusicPlayHistoryPage"};function o(s,t,a,o,i,c){var l=Object(n["S"])("GlobalSongListTable");return Object(n["J"])(),Object(n["m"])("div",e,[Object(n["p"])(l,{"song-list":s.$store.state.playSongList},null,8,["song-list"])])}var i=a("ae7f"),c={name:"MusicPlayHistoryPage",components:{GlobalSongListTable:i["a"]}},l=a("6b0d"),r=a.n(l);const b=r()(c,[["render",o]]);t["default"]=b}}]);
+//# sourceMappingURL=my_music_history.0b201e83.js.map
