@@ -135,7 +135,7 @@ export default {
     const Route = useRoute()
     const id = Route.params?.id
 // 顶顶顶
-
+// ffff
     const tabList = [
         TracksPage,
         CommentPage,
