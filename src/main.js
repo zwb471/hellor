@@ -8,6 +8,7 @@ import axiosPlugin from './plugins/axiosPlugin'
 import antdPlugin from "@/plugins/antdPlugin"
 import vue3LazyLoadPlugin from "@/plugins/vue3LazyLoadPlugin"
 
+console.log(process.env.NODE_ENV);//development
 createApp(App)
     .use(axiosPlugin)
     .use(antdPlugin)

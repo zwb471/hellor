@@ -77,15 +77,15 @@ export default {
           },2000)
           return
       }
-      if ( !passwordReg.test(password) ){
-        const modal = $error({
-          title: '你输入的密码格式不对'
-        })
-        setTimeout(()=>{
-          modal.destroy()
-        },2000)
-        return
-      }
+      // if ( !passwordReg.test(password) ){
+      //   const modal = $error({
+      //     title: '你输入的密码格式不对'
+      //   })
+      //   setTimeout(()=>{
+      //     modal.destroy()
+      //   },2000)
+      //   return
+      // }
       try {
         const res = await $axios.get(api + `/login/cellphone?phone=${phone}&password=${password}`)
         const result = res['data']
@@ -121,6 +121,9 @@ export default {
       }
 
     },
+    //校验手机号码
+    
+
 
     listenLoginWindow() {
       if (this.isShowLoginWindow) {

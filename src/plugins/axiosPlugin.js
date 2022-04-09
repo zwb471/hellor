@@ -11,6 +11,7 @@ import {Modal} from "ant-design-vue"
 
 let config = {
   // baseURL: "http://musicapi.h5sm.com",
+  baseURL: "http://h5.dream520.work",
   timeout: 60 * 1000, // Timeout
   withCredentials: true, // Check cross-site Access-Control
 };

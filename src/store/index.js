@@ -180,7 +180,6 @@ export default createStore({
     // 获取音乐的歌词
     async getMusicLyric({commit},id){
       try {
-
         const res = await $axios.get(api + '/lyric?id='+id)
         const result = res['data']['lrc']
         // console.log(result)

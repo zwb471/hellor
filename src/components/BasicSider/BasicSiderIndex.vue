@@ -164,7 +164,7 @@ export default {
           const {songSheetName,songSheetPrivacy,visible} = this
 
           this.loading = true
-          const res = await $axios.get( api + '/playlist/create?name='+songSheetName+'&privacy='+(songSheetPrivacy?'10':''))
+          const res = await $axios.get(  '/api/playlist/create?name='+songSheetName+'&privacy='+(songSheetPrivacy?'10':''))
           const code = res['data'] && res['data']['code']
           if ( code === 200 ){
             await this.getUserPlayList()
@@ -181,7 +181,8 @@ export default {
       async getUserPlayList(){
         try {
           const userId = Cookies.get('userId')
-          const res = await $axios.get( api + '/user/playlist?uid='+userId+'&t='+Date.now())
+          // const res = await $axios.get( api + '/user/playlist?uid='+userId+'&t='+Date.now())
+          const res = await $axios.get( '/api/user/playlist?uid='+userId+'&t='+Date.now())
           this.createSongList = res['data']['playlist']
         }catch (e) {
           console.log(e.message)
